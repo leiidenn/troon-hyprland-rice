@@ -1,0 +1,72 @@
+{
+    "layer": "top",
+    "reload_style_on_change": true,
+    "height": 57,
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio", "battery", "cpu", "memory", "bluetooth", "tray"],
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "clock": {
+      "format": "{:%H:%M:%S | %d.%m.%Y}",
+      "interval": 1, 
+    },
+    "hyprland/workspaces": {
+      "format": "<span font='18px'>{icon}</span>",
+      "format-icons": {
+        "1": "一",
+        "2": "二",
+        "3": "三",
+        "4": "四",
+        "5": "五",
+        "6": "六",
+        "7": "七",
+        "8": "八",
+        "9": "九",
+        "10": "十",
+        "default": ""
+      },
+      "persistent-workspaces": {
+        "*": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+    },
+    "pulseaudio": {
+      "format": "{volume}% {icon}",
+      "format-bluetooth": "{volume}% 󰂰",
+      "format-muted": "󰝟",
+      "format-icons": {
+        "headphones": "",
+        "bluetooth": "󰥰",
+        "handsfree": "",
+        "headset": "󱡬",
+        "phone": "",
+        "portable": "",
+        "car": "",
+        "default": [
+          "",
+          "",
+          ""
+        ]
+      },
+    },
+  "memory": {
+    "format": "{percentage}% 󰯆",
+  },
+  "cpu": {
+    "interval": 1,
+    "format": "{usage}% ",
+  },
+  "tray": {
+    // "icon-size": 21,
+    "spacing": 10
+  },
+}
