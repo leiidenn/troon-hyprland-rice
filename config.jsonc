@@ -42,7 +42,7 @@
     "pulseaudio": {
       "format": "{volume}% {icon}",
       "format-bluetooth": "{volume}% 󰂰",
-      "format-muted": "󰝟",
+      "format-muted": "",
       "format-icons": {
         "headphones": "",
         "bluetooth": "󰥰",
@@ -59,7 +59,7 @@
       },
     },
   "memory": {
-    "format": "{percentage}% 󰯆",
+    "format": "{percentage}% ",
   },
   "cpu": {
     "interval": 1,
